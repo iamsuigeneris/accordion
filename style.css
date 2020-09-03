@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+body {
+    background:#e4e8ec
+}
+.accordion {
+    width: 80%;
+    margin: 60px auto;
+    max-width: 700px;
+    background: #fff;
+    padding: 30px;
+    
+}
+.accordion-btn {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 18px;
+    text-align: left;
+    font-weight: bold;
+    cursor: pointer; 
+}
+.accordion-btn::after  {
+    content: '\f055';
+    font-family: 'fontawesome';
+    float: right;
+}
+.accordion.is-open::after  {
+    content: '\f056';
+}
+.accordion-btn:hover {
+    background: #ddd;
+}
+.accordion-content {
+    margin:10px 0;
+    padding: 0 30px;
+    max-height: 0;
+    overflow:hidden;  
+}
